@@ -1,0 +1,93 @@
+// File: index.sass - CRA default
+// Date: 7/29/2020
+// Note: Applied CSS Flexbox Module for Mobile First Isometric ReactApp
+
+body
+  margin: 0
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+code
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
+
+
+// A mobile-first 3-columns Flexbox layout with
+//  with full-width header and footer.
+//
+// And, independent from source order.
+
+// Rely on flex-container selector for positioning 
+// and
+//  alignment selector.
+
+// ___ Small screens ___
+.flex-container 
+  display: flex  
+  flex-flow: row wrap
+  // font-weight: bold
+  // text-align: center
+
+// Tell all items to be 100% width, via flex basis. 
+.flex-container > * 
+  // padding: 10px
+  flex: 1 100%
+
+// Rely on source order for mobile-first approach 
+//  in this use-case scenario for markups:
+// 1. header
+// 2. article
+// 3. aside 1
+// 4. aside 2
+// 5. footer
+
+// Mirror JSX markup target selectors.
+.header 
+  background: skyblue
+  border-bottom: 1px solid darken(lightblue, 25%)
+
+
+.main 
+  text-align: left
+  background: lighten(green, 5%)
+
+
+.aside-1 
+  background: gold
+
+
+.aside-2 
+  background: hotpink
+
+
+.footer 
+  background: lightgreen
+  border: 1px solid #ddd
+
+
+// ___ Medium screens ___
+@media all and (max-width: 600px) 
+  // Tell both sidebars to share a row - flex-items 
+  //  sizing and transform selector.
+  .aside 
+      flex: 1 auto
+
+  
+// ___ Large screens ___
+@media all and (min-width: 800px) 
+  // Invert order of first side bar and main.
+  //
+  // And, tell the main element to take twice as 
+  //  much width as the two sidebars.
+  .main    
+      flex: 3 0px
+  .aside-1 
+      order: 1 
+  .main    
+      order: 2
+  .aside-2 
+      order: 3
+  .footer  
+      order: 4
+
+// eof

@@ -1,0 +1,25 @@
+// File: HomeView.sass
+// Date: 8/3/2020
+// Note: React ES6 Component API
+
+@keyframes fadeAndScaleIn
+    0%
+        opacity: 0
+        transform: scale(0.95, 0.95)
+        
+    100%
+        opacity: 1
+        transform: scale(1, 1)
+
+@keyframes mymove 
+  0% 
+      top: 0px
+  100% 
+      top: 200px
+
+.home-view
+    background: lightgreen
+    position: relative
+    // animation: mymove 5s infinite
+    animation: fadeAndScaleIn
+

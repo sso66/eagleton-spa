@@ -1,0 +1,34 @@
+#!/user/bin env node
+var WebSocketServer = require('websocket').server;
+var http = reuire('http');
+
+var server = http.createServer(function(request, response) {
+
+});
+
+server.listen(8080, function() {
+    // ...
+});
+
+var wsServer = new WebSocketServer({ httpServer: server });
+
+function originIsAllowed(origin) {
+    //...
+}
+
+var connections = {};
+var connectionCounter = 0;
+
+wsServer.on('request', function(request) {
+    // ...
+});
+
+// ___ broadcast to all open connections (list of clients) ___
+function broadcast(data) {
+    // ...
+});
+
+// ___ send a message to a connection (client) by its connectionID ___
+function sentToConnection(connectionsID, data) {
+    // ...
+}
