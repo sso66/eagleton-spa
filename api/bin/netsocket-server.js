@@ -8,7 +8,7 @@ const net = require('net');
 
 // ___ create a server object ___
 const server = net.createServer((socket) => {
-    socket.on('data', (date) => {
+    socket.on('data', (data) => {
         console.log(data.toString());
     });
 
