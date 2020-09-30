@@ -12,19 +12,19 @@ import logoAlpha from '../../images/eagleton-spa-alpha.png';
 class FormLayout extends React.Component {
 
     render() {
-        const { header, content } = this.props;
+        const { heading, content } = this.props;
 
         return (
             <div className='form-layout'>
                 <div className='flex-container'>
                     <div className='flex-items'>
                         <h3>
-                            <img src={logo} alt='FormLayout' />
-                            {header}
+                            <img src={logoAlpha} alt='FormLayout' />
+                            heading: {heading}
                         </h3>
                         <p>
-                            <img src={logoAlpha} alt='FormLayout' />
-                            {content}
+                            <img src={logo} alt='FormLayout' />
+                            content: {content}
                         </p>
                     </div>
                 </div>
@@ -34,7 +34,7 @@ class FormLayout extends React.Component {
 }
 
 FormLayout.propTypes = {
-    header: PropTypes.string,
+    heading: PropTypes.string,
     content: PropTypes.string,
 }
 

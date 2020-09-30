@@ -4,11 +4,7 @@
 
 import Header from './Header';
 import NavBar from './NavBar';
-import Footer from './Footer';
-import Sidebar from './Sidebar';
-import Menubar from './Menubar';
 import Main from './Main';
-
 import UIMainScreen from './UIMainScreen';
 import UINavbarView from './UINavbarView';
 
@@ -17,8 +13,6 @@ export {
     UINavbarView,
     Header, 
     NavBar, 
-    Sidebar,
-    Menubar,
     Main,
 }
 

@@ -25,7 +25,7 @@ class TableLayout extends React.Component {
                                     <td width='200'>WS Protocol</td>
                                     <td>
                                         <select>
-                                            <option value='ws' selected='selected'>ws</option>
+                                            <option value='ws' defaultValue='selected'>ws</option>
                                             <option value='wss'>wss</option>
                                         </select>
                                     </td>

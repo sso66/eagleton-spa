@@ -7,9 +7,8 @@ import { Header, Main } from '../components/Site'
 
 import './App.sass'; 
 import logo from './logo.svg';
-// import logo from './octalhex_opaque.png';
 
-console.log("Mounting App.jsx... <App />");
+console.log("Mounting src/App/App.jsx... <App />");
 
 class App extends React.Component {
     constructor(props) {

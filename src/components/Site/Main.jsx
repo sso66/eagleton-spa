@@ -14,7 +14,7 @@ import Schedule from '../../views/Products/Schedule';
 
 // import './Site.sass';
 
-console.log("Mounting Main.jsx...");
+console.log("Mounting src/components/Site/Main.jsx...");
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).

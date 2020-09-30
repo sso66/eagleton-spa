@@ -1,6 +1,6 @@
 // File: HomeView.jsx
 // Date: 7/22/2020
-// Note: React ES6 Component API catalog
+// Note: React ES6 Component API
 
 import React from 'react'
 import './HomeView.sass';
@@ -103,19 +103,22 @@ class HomeView extends React.Component {
       return (
         <div className='homeview'>
           <h1>HomeView</h1>
-          <h2>Final Steps to Production</h2>
+          <h2>From Prototypes for Seperation of Concerns</h2>
           {/* <UINavbarViewController /> */}
+
           <div style={styles}>
             {/* <Navbar pages={pages} /> */}
             {/* <DashboardView pages={pages} /> */}
           </div>
+
           {/* <ClassNameButton label='Banner' />
           <ClassNameButton label='Banner' />
           <ClassNameButton label='Banner' /> */}
+
           {/* <UINavbarView /> */}
           {/* <UIMainScreen /> */}
           <div className='homeview'>
-          <h3>Understanding UI Architecture &amp; API</h3>
+          <h3>To Shared Understanding of UI/UX Architecture &amp; API Production</h3>
           <hr />
           {/* <SignUpDialog />
           <HackerNews />
@@ -154,14 +157,14 @@ class HomeView extends React.Component {
           </ErrorBoundary> */}
 
         <FormLayout 
-            header="FormLayout in React JSX"
+            heading="FormLayout in React JSX"
             content="CSS Flexbox Module in SASS" />
 
-          {/* <PageFormLayout /> */}
-          {/* <PageListLayout /> */}
-          {/* <ListLayout id='USM102' name='Basic List Layout'/> */}
-          {/* <TableLayout /> */}
-        {/* <GridLayout id='USM101' name='Basic Grid Layout' /> */}
+          <ListLayout id='USM102' name='Basic List Layout'/>
+          <PageFormLayout />
+          <PageListLayout />
+          <TableLayout />
+          <GridLayout id='USM101' name='Basic Grid Layout' />
 
           {/* <ChangeButton label='Change Button' /> */}
 
