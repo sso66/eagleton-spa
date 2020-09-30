@@ -6,8 +6,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import './FormLayout.sass';
-import logo from '../../images/my-react-app.png';
-import logoAlpha from '../../images/my-react-app-alpha.png';
+import logo from '../../images/eagleton-spa.png';
+import logoAlpha from '../../images/eagleton-spa-alpha.png';
 
 class FormLayout extends React.Component {
 

@@ -1,6 +1,6 @@
 // File: HomeView.jsx
 // Date: 7/22/2020
-// Note: React ES6 Component API
+// Note: React ES6 Component API catalog
 
 import React from 'react'
 import './HomeView.sass';
@@ -16,9 +16,7 @@ import UINavbarViewController from '../../components/Site/UINavbarViewController
 
 // import { ScrollingList } from '../components/Lists';
 
-import {
-  ClassNameButton,
-} from '../../components/Buttons'
+import {  ClassNameButton } from '../../components/Buttons'
 
 import { 
   FormLayout, 
@@ -105,7 +103,7 @@ class HomeView extends React.Component {
       return (
         <div className='homeview'>
           <h1>HomeView</h1>
-          <h2>Final Steps to Production on UIScreen + UIStyle</h2>
+          <h2>Final Steps to Production</h2>
           {/* <UINavbarViewController /> */}
           <div style={styles}>
             {/* <Navbar pages={pages} /> */}
@@ -116,8 +114,8 @@ class HomeView extends React.Component {
           <ClassNameButton label='Banner' /> */}
           {/* <UINavbarView /> */}
           {/* <UIMainScreen /> */}
-          <div className='home'>
-          <h3>Understanding React ES6+ Flexbox Module Architecture &amp; API</h3>
+          <div className='homeview'>
+          <h3>Understanding UI Architecture &amp; API</h3>
           <hr />
           {/* <SignUpDialog />
           <HackerNews />

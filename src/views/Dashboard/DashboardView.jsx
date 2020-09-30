@@ -5,7 +5,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './DashboardView.sass';
-import logo from '../../images/my-react-app-alpha.png';
+import logo from '../../images/eagleton-spa-alpha.png';
 
 //  UIViewModel - "scope": text
 const NavbarItem = (props) => (
