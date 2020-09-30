@@ -8,15 +8,12 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 import App from './App'
 
-// ___ UIDevice / UIWindow / UIScreen / UIStyle / UIStateTransition ___
-// import './styles/_reset.sass';    
-// ___ UIApplication ___     
+// import './styles/_reset.sass';     
 import './index.sass';  
-// ___ UIView ___
 // import './styles/_bulma.sass';  
 // import './styles/_animations.sass';
 
-console.log("Mounting index.jsx... <index />");
+console.log("Mounting src/index.jsx... <index />");
 
 ReactDOM.render(
   <React.StrictMode>
