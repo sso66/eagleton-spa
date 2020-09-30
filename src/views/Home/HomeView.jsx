@@ -8,7 +8,7 @@ import './HomeView.sass';
 import { DashboardView, Navbar } from '../Dashboard';
 import { UIMainScreen, UINavbarView } from '../../components/Site';
 
-// import UINavbarViewController from '../../components/Site/UINavbarViewController';
+import UINavbarViewController from '../../components/Site/UINavbarViewController';
 // import { Speedometer } from '../components/SVGR';
 
 // import { Refs1, Refs2, Refs3, Refs4 } from '../components/Refs';
@@ -18,7 +18,6 @@ import { UIMainScreen, UINavbarView } from '../../components/Site';
 
 import {
   ClassNameButton,
-
 } from '../../components/Buttons'
 
 import { 
@@ -104,20 +103,22 @@ class HomeView extends React.Component {
       ];
       
       return (
-        <div className='home-view'>
-          {/* <h3>Isomorphic Web Apps</h3> */}
+        <div className='homeview'>
+          <h1>HomeView</h1>
+          <h2>Final Steps to Production on UIScreen + UIStyle</h2>
           {/* <UINavbarViewController /> */}
           <div style={styles}>
             {/* <Navbar pages={pages} /> */}
-            <DashboardView pages={pages} />
+            {/* <DashboardView pages={pages} /> */}
           </div>
+          {/* <ClassNameButton label='Banner' />
           <ClassNameButton label='Banner' />
-          <ClassNameButton label='Banner' />
-          <ClassNameButton label='Banner' />
-          {/* <UINavbarView />
-          <UIMainScreen /> */}
-          {/* <div className='home'> */}
-          {/* <h2>HomeView: React ES6 Component Architecture &amp; API</h2> */}
+          <ClassNameButton label='Banner' /> */}
+          {/* <UINavbarView /> */}
+          {/* <UIMainScreen /> */}
+          <div className='home'>
+          <h3>Understanding React ES6+ Flexbox Module Architecture &amp; API</h3>
+          <hr />
           {/* <SignUpDialog />
           <HackerNews />
           <FilterableProductTable products={PRODUCTS} /> */}
@@ -154,9 +155,9 @@ class HomeView extends React.Component {
             <Lifecycle name='Redux' />
           </ErrorBoundary> */}
 
-        {/* <FormLayout 
+        <FormLayout 
             header="FormLayout in React JSX"
-            content="CSS Flexbox Module in SASS" /> */}
+            content="CSS Flexbox Module in SASS" />
 
           {/* <PageFormLayout /> */}
           {/* <PageListLayout /> */}
@@ -184,7 +185,7 @@ class HomeView extends React.Component {
 
             {/* <Speedometer /> */}
           </div>
-          // </div>
+          </div>
         );
       }
   }

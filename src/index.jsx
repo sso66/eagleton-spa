@@ -9,12 +9,12 @@ import * as serviceWorker from './serviceWorker';
 import App from './App'
 
 // ___ UIDevice / UIWindow / UIScreen / UIStyle / UIStateTransition ___
-import './styles/_reset.sass';    
+// import './styles/_reset.sass';    
 // ___ UIApplication ___     
 import './index.sass';  
 // ___ UIView ___
-import './styles/_bulma.sass';  
-import './styles/_animations.sass';
+// import './styles/_bulma.sass';  
+// import './styles/_animations.sass';
 
 console.log("Mounting index.jsx... <index />");
 
