@@ -1,61 +1,66 @@
 // File: FormLayout.sass
-// Date: 7/24/2020
-// Note: Applied CSS Flexbox Module
+// Date: 10/2/2020
+// Note: Applied CSS display order with Flexbox Module
 
-.form-layout
-    background-color: silver
-    background-image: url('../../images/eagleton-spa-alpha.png')
-    background-repeat: repeat-x
-    z-index: 999999
+.form-wrapper
+  background-color: black
+  background-image: url('../../images/eagleton.jpg')
+  background-repeat: no-repeat
 
 .flex-container
-    display: flex
+  display: flex
+  // border: 1px solid blue
 
 .flex-items
-    width: 480px
-    height: 240px
-    margin: auto
-    background: black
-    border-radius: 3px
+  width: 480px
+  height: 240px
+  margin: auto
+  // border: 3px solid red
+ 
+  h3
+    background: lightgreen
+    border: 3px solid purple
+    color: darkblue
 
-    h3
-      background: lightgreen
-      border: 3px solid purple
-      padding: 2px
-      color: darkblue
-
-    p
-      background: purple
-      border: 3px solid darkblue
-      padding: 5px  
-
-    .logo, .logoAlpa
+    .logoAlpha
       height: 10vmin
       pointer-events: none
 
+  p
+    background: purple
+    border: 3px solid darkblue
+    color: lightgreen  
+
+    .logo
+      height: 10vmin
+      pointer-events: none
+
+      
 @media (prefers-reduced-motion: no-preference)
   .logo
-  // animation: name duration timing-function delay iteration-count direction fill-mode
-  animation: logoSpin infinite 20s linear 
+    // animation: name duration timing-function delay iteration-count direction fill-mode
+    animation: logoSpin infinite 20s linear 
 
+
+@media (prefers-reduced-motion: no-preference)
   .logoAlpha
-  // animation: name duration timing-function delay iteration-count direction fill-mode
-  animation: logoFloat infinite 20s linear
+    // animation: name duration timing-function delay iteration-count direction fill-mode
+    animation: logoFloat infinite 20s linear
 
 
 @keyframes logoSpin 
-    from
-      transform: rotate(0deg)
-    to 
-      transform: rotate(360deg)
+  from
+    transform: rotate(0deg)
+  to 
+    transform: rotate(360deg)
 
 
 @keyframes logoFloat
-    0%
-      transform: translateY(0)    
-    50%
-      transform: translate(300px)
-    100% 
-      transform: translateY(0)
+  0%
+    transform: translateY(0)    
+  50%
+    transform: translate(300px)
+  100% 
+    transform: translateY(0)
 
 // eof

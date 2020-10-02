@@ -1,6 +1,6 @@
 // File: ListLayout.jsx
-// Date: 7/23/2020
-// Note: Applied CSS Flexbox Module
+// Date: 10/2/2020
+// Note: Applied HTML source order with Flexbox Module
 
 import React from 'react';
 import PropTypes from 'prop-types';

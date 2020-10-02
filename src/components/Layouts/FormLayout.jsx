@@ -1,6 +1,6 @@
 // File: FormLayout.jsx
-// Date: 7/24/2020
-// Note: Applied CSS Flexbox Module
+// Date: 10/2/2020
+// Note: Applied HTML source order with Flexbox Module
 
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -15,16 +15,16 @@ class FormLayout extends React.Component {
         const { heading, content } = this.props;
 
         return (
-            <div className='form-layout'>
+            <div className='flex-wrapper'>
                 <div className='flex-container'>
                     <div className='flex-items'>
                         <h3>
                             <img src={logoAlpha} alt='FormLayout' className='logoAlpha' />
-                            heading: {heading}
+                            Heading: {heading}
                         </h3>
                         <p>
                             <img src={logo} alt='FormLayout' className='logo' />
-                            content: {content}
+                            Content: {content}
                         </p>
                     </div>
                 </div>
