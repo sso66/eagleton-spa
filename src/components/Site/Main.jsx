@@ -9,8 +9,8 @@ import {
 } from "react-router-dom";
 
 import { HomeView } from '../../views/Home';
-import Roster from '../../views/Products/Roster';
-import Schedule from '../../views/Products/Schedule';
+// import Roster from '../../views/Products/Roster';
+// import Schedule from '../../views/Products/Schedule';
 
 // import './Site.sass';
 

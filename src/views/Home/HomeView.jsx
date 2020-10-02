@@ -5,10 +5,10 @@
 import React from 'react'
 import './HomeView.sass';
 
-import { DashboardView, Navbar } from '../Dashboard';
-import { UIMainScreen, UINavbarView } from '../../components/Site';
+// import { DashboardView, Navbar } from '../Dashboard';
+// import { UIMainScreen, UINavbarView } from '../../components/Site';
 
-import UINavbarViewController from '../../components/Site/UINavbarViewController';
+// import UINavbarViewController from '../../components/Site/UINavbarViewController';
 // import { Speedometer } from '../components/SVGR';
 
 // import { Refs1, Refs2, Refs3, Refs4 } from '../components/Refs';
@@ -16,15 +16,15 @@ import UINavbarViewController from '../../components/Site/UINavbarViewController
 
 // import { ScrollingList } from '../components/Lists';
 
-import {  ClassNameButton } from '../../components/Buttons'
+// import {  ClassNameButton } from '../../components/Buttons'
 
 import { 
   FormLayout, 
-  ListLayout, 
-  PageFormLayout, 
-  PageListLayout, 
-  TableLayout,
-  GridLayout,
+  // ListLayout, 
+  // PageFormLayout, 
+  // PageListLayout, 
+  // TableLayout,
+  // GridLayout,
 } from '../../components/Layouts'
 
 // import { ChangeButton } from '../components/Buttons';
@@ -69,36 +69,38 @@ const styles = {
   fontFamily: 'sans-serif',
   textAlign: 'center',
 }
-const pages = ['Home', 'About', 'Products', 'Contact'];
 
-const message = 
-  `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
- sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
- Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
- aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
- voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
- Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
- deserunt mollit anim id est laborum.                              `        
-;
-const comment = {
-  date: new Date(),
-  text: 'I hope you enjoy coding React JSX with ES6+!',
-  author: {
-    name: 'Hello Kitty',
-    avatarUrl: 'https://placekitten.com/g/64/64',
-  },
-};
+// const pages = ['Home', 'About', 'Products', 'FAQ', 'Contact'];
+
+// const message = 
+//   `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+//  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+//  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+//  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+//  voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+//  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+//  deserunt mollit anim id est laborum.                              `        
+// ;
+
+// const comment = {
+//   date: new Date(),
+//   text: 'I hope you enjoy coding React JSX with ES6+!',
+//   author: {
+//     name: 'Hello Kitty',
+//     avatarUrl: 'https://placekitten.com/g/64/64',
+//   },
+// };
 
 class HomeView extends React.Component {
     render() {
-      const PRODUCTS = [
-        {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
-        {category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball'},    
-        {category: 'Sporting Goods', price: '$29.99', stocked: false, name: 'Basketball'},
-        {category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch'},
-        {category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone 5'},
-        {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus'},
-      ];
+      // const PRODUCTS = [
+      //   {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
+      //   {category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball'},    
+      //   {category: 'Sporting Goods', price: '$29.99', stocked: false, name: 'Basketball'},
+      //   {category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch'},
+      //   {category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone 5'},
+      //   {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus'},
+      // ];
       
       return (
         <div className='homeview'>
@@ -159,12 +161,11 @@ class HomeView extends React.Component {
         <FormLayout 
             heading="FormLayout in React JSX"
             content="CSS Flexbox Module in SASS" />
-
-          <ListLayout id='USM102' name='Basic List Layout'/>
-          <PageFormLayout />
-          <PageListLayout />
-          <TableLayout />
-          <GridLayout id='USM101' name='Basic Grid Layout' />
+          {/* <ListLayout id='USM102' name='Basic List Layout'/> */}
+          {/* <PageFormLayout /> */}
+          {/* <PageListLayout /> */}
+          {/* <TableLayout /> */}
+          {/* <GridLayout id='USM101' name='Basic Grid Layout' /> */}
 
           {/* <ChangeButton label='Change Button' /> */}
 

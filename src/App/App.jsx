@@ -3,7 +3,10 @@
 // Note: React ES6 Component API
 
 import React from 'react';
-import { Header, Main } from '../components/Site'
+import { 
+    // Header, 
+    Main 
+} from '../components/Site'
 
 import './App.sass'; 
 import logo from './logo.svg';

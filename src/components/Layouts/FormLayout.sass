@@ -8,27 +8,54 @@
     background-repeat: repeat-x
     z-index: 999999
 
-    .flex-container
-        display: flex
+.flex-container
+    display: flex
 
-    .flex-items
-        width: 480px
-        height: 240px
-        margin: auto
-        background: black
-        border-radius: 3px
+.flex-items
+    width: 480px
+    height: 240px
+    margin: auto
+    background: black
+    border-radius: 3px
 
-        & h3
-            background: lightgreen
-            border: 3px solid purple
-            padding: 2px
-            color: darkblue
+    h3
+      background: lightgreen
+      border: 3px solid purple
+      padding: 2px
+      color: darkblue
 
-        & p
-            background: purple
-            border: 3px solid darkblue
-            padding: 5px
-            font-size: 1.1em
-            color: lightgreen
+    p
+      background: purple
+      border: 3px solid darkblue
+      padding: 5px  
+
+    .logo, .logoAlpa
+      height: 10vmin
+      pointer-events: none
+
+@media (prefers-reduced-motion: no-preference)
+  .logo
+  // animation: name duration timing-function delay iteration-count direction fill-mode
+  animation: logoSpin infinite 20s linear 
+
+  .logoAlpha
+  // animation: name duration timing-function delay iteration-count direction fill-mode
+  animation: logoFloat infinite 20s linear
+
+
+@keyframes logoSpin 
+    from
+      transform: rotate(0deg)
+    to 
+      transform: rotate(360deg)
+
+
+@keyframes logoFloat
+    0%
+      transform: translateY(0)    
+    50%
+      transform: translate(300px)
+    100% 
+      transform: translateY(0)
 
 // eof
