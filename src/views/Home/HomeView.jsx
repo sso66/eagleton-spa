@@ -5,6 +5,12 @@
 import React from 'react'
 import './HomeView.sass';
 
+
+import {
+  DefinitionList,
+  Division
+} from '../../components/Shapes'
+
 // import { DashboardView, Navbar } from '../Dashboard';
 // import { UIMainScreen, UINavbarView } from '../../components/Site';
 
@@ -19,13 +25,19 @@ import './HomeView.sass';
 // import {  ClassNameButton } from '../../components/Buttons'
 
 import { 
-  FormLayout, 
+  // FormLayout, 
   // ListLayout, 
   // PageFormLayout, 
   // PageListLayout, 
   // TableLayout,
   // GridLayout,
-} from '../../components/Layouts'
+} from '../../components/Layouts';
+
+import {
+  // ComplexTable,
+  // SimpleTable,
+} from '../../components/Tables';
+
 
 // import { ChangeButton } from '../components/Buttons';
 // import { Clock, Timer, Pomodoro } from '../components/Clocks';
@@ -48,7 +60,14 @@ import {
 // import { PictureView, VideoView } from '../components/Pictures'
 // import FilterableProductTable from './Dashboard/FilterableProductTable';
 // import { LoginForm, LoginFormOnSubmit } from '../components/Loggings';
-// import { SubmitForm, Reservations, Reservation } from '../components/Forms';
+
+import { 
+  // SubmitForm, 
+  // Reservations, 
+  // Reservation,
+    HTML5Form 
+}
+from '../../components/Forms';
 
 // import { 
 //   Flexbox,
@@ -104,9 +123,8 @@ class HomeView extends React.Component {
       
       return (
         <div className='homeview'>
-          <h1>HomeView</h1>
-          <h2>From Prototypes for Seperation of Concerns</h2>
-          {/* <UINavbarViewController /> */}
+          <h1>h1 - HomeView</h1>
+          <h2>h2 - From React.jsx and React.sass Prototypes for Separation of Concerns</h2>
 
           <div style={styles}>
             {/* <Navbar pages={pages} /> */}
@@ -120,11 +138,14 @@ class HomeView extends React.Component {
           {/* <UINavbarView /> */}
           {/* <UIMainScreen /> */}
           <div className='homeview'>
-          <h3>To Shared Understanding of UI/UX Architecture &amp; API Production</h3>
+          <h3>h3 - To Shared Understanding of UI/UX Architecture &amp; React UI <code>Entry Points</code> Redux API for Production Flow</h3>
           <hr />
-          {/* <SignUpDialog />
-          <HackerNews />
-          <FilterableProductTable products={PRODUCTS} /> */}
+
+          {/* <DefinitionList /> */}
+          {/* <Division /> */}
+          {/* <HTML5Form />           */}
+          {/* <HackerNews /> */}
+          {/* <FilterableProductTable products={PRODUCTS} /> */}
           {/* <PictureView /> */}
  
           {/* <ReactChildren>{() =><h1>Hello React Children: Function as a child!</h1>}</ReactChildren>
@@ -158,14 +179,22 @@ class HomeView extends React.Component {
             <Lifecycle name='Redux' />
           </ErrorBoundary> */}
 
-        <FormLayout 
+          <HTML5Form />
+        {/* <FormLayout 
             heading="FormLayout in React JSX"
-            content="CSS Flexbox Module in SASS" />
-          {/* <ListLayout id='USM102' name='Basic List Layout'/> */}
+            content="CSS Flexbox Module in SASS" /> */}
+
+          {/* <ListLayout 
+            id='508674' 
+            name='HTML source order vs CSS display order'/> */}
+
           {/* <PageFormLayout /> */}
           {/* <PageListLayout /> */}
+
+          {/* <GridLayout id='506874' name='Basic Grid Layout' /> */}
           {/* <TableLayout /> */}
-          {/* <GridLayout id='USM101' name='Basic Grid Layout' /> */}
+
+            {/* <ComplexTable /> */}
 
           {/* <ChangeButton label='Change Button' /> */}
 

@@ -13,6 +13,7 @@ class TableLayout extends React.Component {
                 <div className="flex-container">
 
                     <div className='flex-items'>
+                    <h2>Basic Table Layout</h2>
                     <h3>WebSocket Connection Parameters</h3>
                         <table>
                             <thead>

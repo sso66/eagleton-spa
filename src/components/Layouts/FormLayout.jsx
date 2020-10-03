@@ -18,10 +18,10 @@ class FormLayout extends React.Component {
             <div className='flex-wrapper'>
                 <div className='flex-container'>
                     <div className='flex-items'>
-                        <h3>
+                        <h2>
                             <img src={logoAlpha} alt='FormLayout' className='logoAlpha' />
-                            Heading: {heading}
-                        </h3>
+                            h2 - Heading: {heading}
+                        </h2>
                         <p>
                             <img src={logo} alt='FormLayout' className='logo' />
                             Content: {content}

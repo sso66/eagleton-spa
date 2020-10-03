@@ -8,12 +8,15 @@ import EssayForm from './EssayForm';
 import FlavorForm from './FlavorForm';
 import Reservation from './Reservation';
 
+import HTML5Form from './HTML5Form';
+
 export {
     SubmitForm,
     NameForm,
     EssayForm,
     FlavorForm,
     Reservation,
+    HTML5Form
 }
 
 // eof

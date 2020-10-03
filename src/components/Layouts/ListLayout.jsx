@@ -9,10 +9,10 @@ import './ListLayout.sass';
 class ListLayout extends React.Component {
     
     render() {
-        return (            <
-            div className='list-page-wrapper'>
+        return (            
+            <div className='flex-wrapper'>
                 <h2>
-                    <span>{this.props.id}</span>
+                    <span>h2 - {this.props.id}</span>
                     {": "}
                     <label htmlFor='grid-layout'>{this.props.name}</label>
                 </h2>
@@ -30,8 +30,8 @@ class ListLayout extends React.Component {
     }
 }
 
-ListLayout.prosType = {
-
+ListLayout.propsType = {
+    name: PropTypes.string,
 }
 
 export default ListLayout;

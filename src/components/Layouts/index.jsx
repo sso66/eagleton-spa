@@ -17,19 +17,19 @@
 // 3. align-self:
 
 import FormLayout from './FormLayout';
-// import ListLayout from './ListLayout';
-// import PageFormLayout from './PageFormLayout';
-// import PageListLayout from './PageListLayout';
-// import TableLayout from './TableLayout';
-// import GridLayout from './GridLayout';
+import ListLayout from './ListLayout';
+import PageFormLayout from './PageFormLayout';
+import PageListLayout from './PageListLayout';
+import TableLayout from './TableLayout';
+import GridLayout from './GridLayout';
 
 export {
     FormLayout,
-    // ListLayout,
-    // PageFormLayout,
-    // PageListLayout,
-    // TableLayout,
-    // GridLayout,
+    ListLayout,
+    PageFormLayout,
+    PageListLayout,
+    TableLayout,
+    GridLayout,
 }
 
 // eof

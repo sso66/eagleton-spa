@@ -36,9 +36,9 @@ class GridLayout extends React.Component {
                 </div>
                 <div className='row'>
                     <div className='column'>
-                        <div className='orange-column'>
+                        <div className='yellow-column'>
                             Some Text in Column 2 Row 1
-                            </div>
+                        </div>
                     </div>
                     <div className='column'>
                         <div className='red-column'>

@@ -1,33 +1,28 @@
-// File: FormLayout.sass
+// File: ListLayout.sass
 // Date: 10/2/2020
 // Note: Applied CSS display order with Flexbox Module
 
-  // A list 6 items with fixed dimensons, but can be auto-resized.
+// A list 6 items with fixed dimensons, but can be auto-resized.
 
-  /* 
-   * Tell it to be evanly distributed on the horizontal axis so
-   * that when you resize the browser, everything scales nicely, 
-   * and with media queries.
-   */
+// Tell it to be evanly distributed on the horizontal axis so
+// that when you resize the browser, everything scales nicely, 
+// and with media queries.
   
-.list-page-wrapper 
+.flex-wrapper 
   // margin: 15px
   background-color: orange
 
+  
 .flex-container 
-  /* First create a flex layout context */
-  // display: flex
-  
-  /* Then define the flow direction and if we allow the items to wrap 
-   * Remember this is the same as:
-   * flex-direction: row;
-   * flex-wrap: wrap;
-   */
+  //First create a flex layout context 
+  display: flex
+  // Then define the flow direction and if we allow the items to wrap 
+  // Remember this is the same as:
+  // flex-direction: row;
+  // flex-wrap: wrap;
   flex-flow: row wrap
-  
-  /* Then define how is distributed the remaining space */
+  //Then define how is distributed the remaining space
   justify-content: space-around
-  
   margin: 0
   padding: 0
   list-style: none
