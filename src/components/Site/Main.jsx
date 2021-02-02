@@ -9,8 +9,8 @@ import {
 } from "react-router-dom";
 
 import { HomeView } from '../../views/Home';
-// import Roster from '../../views/Products/Roster';
-// import Schedule from '../../views/Products/Schedule';
+import Roster from '../../views/Products/Roster';
+import Schedule from '../../views/Products/Schedule';
 
 // import './Site.sass';
 
@@ -38,8 +38,8 @@ export default function Main() {
         */}
         <Switch>
           <Route path="/" exact component={HomeView} />
-          {/* <Route path="/roster" component={Roster} /> */}
-          {/* <Route path="/schedule" component={Schedule} /> */}
+          <Route path="/roster" component={Roster} />
+          <Route path="/schedule" component={Schedule} />
         </Switch>
       {/* </div> */}
       </main>

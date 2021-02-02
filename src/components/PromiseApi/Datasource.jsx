@@ -3,7 +3,9 @@
 // Note: How to read local JSON data (PDC) in React 
 
 import React from 'react'
-import data from  '../../data/default.json'
+// import data from  '../../data/books.json'
+import data from '../../api/books.json'
+
 import './Datasource.sass'
 
 

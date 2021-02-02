@@ -5,7 +5,7 @@ import './DefinitionList.sass';
 console.log('Mounting DefinitionList.jsx... <DefinitionList />');
 
 const DefinitionList = () => (
-    <div>
+    <div className='definition-wrapper'>
         <dl id="feature">
             <dt>Roundabout</dt>
             <dd>

@@ -16,11 +16,11 @@ import './index.sass';
 console.log("Mounting src/index.jsx... <index />");
 
 ReactDOM.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <Router>
       <App title='Thinking in React' />
-    </Router>
-  </React.StrictMode>,
+    </Router>,
+  // </React.StrictMode>,
       document.getElementById('root')
 );
 

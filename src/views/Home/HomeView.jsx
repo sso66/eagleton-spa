@@ -1,27 +1,30 @@
 // File: HomeView.jsx
 // Date: 7/22/2020
 // Note: React ES6 Component API
-
 import React from 'react'
 import './HomeView.sass';
 
+import { 
+  Navbar, 
+  DashboardView, 
+} from '../Dashboard';
+
+import { 
+  UINavbarView,
+  UIMainScreen, 
+} from '../../components/Site';
 
 import {
-  DefinitionList,
-  Division
+  // DefinitionList,
+  // Division
 } from '../../components/Shapes'
 
-// import { DashboardView, Navbar } from '../Dashboard';
-// import { UIMainScreen, UINavbarView } from '../../components/Site';
-
 // import UINavbarViewController from '../../components/Site/UINavbarViewController';
-// import { Speedometer } from '../components/SVGR';
-
+// import { Speedometer } from '../components/SVGR'
 // import { Refs1, Refs2, Refs3, Refs4 } from '../components/Refs';
 // import InputModel from '../components/Refs/Refs4'
 
 // import { ScrollingList } from '../components/Lists';
-
 // import {  ClassNameButton } from '../../components/Buttons'
 
 import { 
@@ -37,7 +40,6 @@ import {
   // ComplexTable,
   // SimpleTable,
 } from '../../components/Tables';
-
 
 // import { ChangeButton } from '../components/Buttons';
 // import { Clock, Timer, Pomodoro } from '../components/Clocks';
@@ -65,7 +67,7 @@ import {
   // SubmitForm, 
   // Reservations, 
   // Reservation,
-    HTML5Form 
+  // HTML5Form 
 }
 from '../../components/Forms';
 
@@ -81,7 +83,10 @@ from '../../components/Forms';
 //   SignUpDialog,
 // } from '../components/Compositions';
 
-// import { FetchAPI, AxiosAPI } from '../components/Models';
+import { 
+  // DataLocations, 
+  // Datasource 
+} from '../../components/PromiseApi';
 
 // ___ DashboardView resources ___
 const styles = {
@@ -89,7 +94,7 @@ const styles = {
   textAlign: 'center',
 }
 
-// const pages = ['Home', 'About', 'Products', 'FAQ', 'Contact'];
+const pages = ['Home', 'About', 'Products', 'FAQ', 'Contact'];
 
 // const message = 
 //   `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -127,95 +132,98 @@ class HomeView extends React.Component {
           <h2>h2 - From React.jsx and React.sass Prototypes for Separation of Concerns</h2>
 
           <div style={styles}>
-            {/* <Navbar pages={pages} /> */}
-            {/* <DashboardView pages={pages} /> */}
+            <Navbar pages={pages} />
+            <DashboardView pages={pages} />
           </div>
 
           {/* <ClassNameButton label='Banner' />
           <ClassNameButton label='Banner' />
           <ClassNameButton label='Banner' /> */}
 
-          {/* <UINavbarView /> */}
-          {/* <UIMainScreen /> */}
+          <UINavbarView />
+          <UIMainScreen />
           <div className='homeview'>
-          <h3>h3 - To Shared Understanding of UI/UX Architecture &amp; React UI <code>Entry Points</code> Redux API for Production Flow</h3>
-          <hr />
+            <h3>h3 - To Shared Understanding of UI/UX Architecture &amp; React UI <code>Entry Points</code> Redux API for Production Flow</h3>
+            <hr />
+            {/* <DataLocations /> */}
+            {/* <Datasource /> */}
+            {/* <AxiosAPI /> */}
 
-          {/* <DefinitionList /> */}
-          {/* <Division /> */}
-          {/* <HTML5Form />           */}
-          {/* <HackerNews /> */}
-          {/* <FilterableProductTable products={PRODUCTS} /> */}
-          {/* <PictureView /> */}
- 
-          {/* <ReactChildren>{() =><h1>Hello React Children: Function as a child!</h1>}</ReactChildren>
-          <IgnoreFirstChild>
-            <h2>First Child</h2>
-            <h2>Second Child</h2>
-          </IgnoreFirstChild>
+            {/* <DefinitionList /> */}
+            {/* <Division /> */}
+            {/* <HTML5Form />           */}
+            {/* <HackerNews /> */}
+            {/* <FilterableProductTable products={PRODUCTS} /> */}
+            {/* <PictureView /> */}
+  
+            {/* <ReactChildren>{() =><h1>Hello React Children: Function as a child!</h1>}</ReactChildren>
+            <IgnoreFirstChild>
+              <h2>First Child</h2>
+              <h2>Second Child</h2>
+            </IgnoreFirstChild>
 
-          <ChildrenCounter>
-            <h2>First Child</h2>
-            <h2>Second Child</h2>
-          </ChildrenCounter>
-          <SortChildren>
-            {'bananas'}{'oranges'}{'apples'}
-          </SortChildren>
+            <ChildrenCounter>
+              <h2>First Child</h2>
+              <h2>Second Child</h2>
+            </ChildrenCounter>
+            <SortChildren>
+              {'bananas'}{'oranges'}{'apples'}
+            </SortChildren>
 
-          <RadioGroup name="g1">
-            <RadioButton value="First" />
-            <RadioButton value="Second" />
-            <RadioButton value="Third" />
-          </RadioGroup>
-          <hr />
-          <RadioGroup name="g2">
-            <RadioButton value="Fourth" />
-            <RadioButton value="Fifth" />
-            <RadioButton value="Sixth" />
-          </RadioGroup>
+            <RadioGroup name="g1">
+              <RadioButton value="First" />
+              <RadioButton value="Second" />
+              <RadioButton value="Third" />
+            </RadioGroup>
+            <hr />
+            <RadioGroup name="g2">
+              <RadioButton value="Fourth" />
+              <RadioButton value="Fifth" />
+              <RadioButton value="Sixth" />
+            </RadioGroup>
 
-          <ErrorBoundary>
-            <Lifecycle />
-            <Lifecycle name='Redux' />
-          </ErrorBoundary> */}
+            <ErrorBoundary>
+              <Lifecycle />
+              <Lifecycle name='Redux' />
+            </ErrorBoundary> */}
 
-          <HTML5Form />
-        {/* <FormLayout 
-            heading="FormLayout in React JSX"
-            content="CSS Flexbox Module in SASS" /> */}
+            {/* <HTML5Form /> */}
+            {/* <FormLayout 
+              heading="FormLayout in React JSX"
+              content="CSS Flexbox Module in SASS" /> */}
 
-          {/* <ListLayout 
-            id='508674' 
-            name='HTML source order vs CSS display order'/> */}
+            {/* <ListLayout 
+              id='508674' 
+              name='HTML source order vs CSS display order'/> */}
 
-          {/* <PageFormLayout /> */}
-          {/* <PageListLayout /> */}
+            {/* <PageFormLayout /> */}
+            {/* <PageListLayout /> */}
 
-          {/* <GridLayout id='506874' name='Basic Grid Layout' /> */}
-          {/* <TableLayout /> */}
+            {/* <GridLayout id='506874' name='Basic Grid Layout' /> */}
+            {/* <TableLayout /> */}
 
             {/* <ComplexTable /> */}
 
-          {/* <ChangeButton label='Change Button' /> */}
+            {/* <ChangeButton label='Change Button' /> */}
 
-          {/* <Comment 
-            date={comment.date}
-            text={comment.text}
-            author={comment.author}          
-          /> */}
-            {/* <Clock /> */}
-            {/* <Timer /> */}
-            {/* <ScrollingList 
-              userID='RLI831'
-              message={message}
-            />
-            <Pomodoro /> */}
-            {/* <Refs1 label="Change" action={() => alert("Hello")} />
-            <Refs2 label="Change: createRef" action={() => alert("Hello: createRef")} />
-            <Refs3 label="Change: useRef" action={() => alert("Hello: useRef")} /> */}
+            {/* <Comment 
+              date={comment.date}
+              text={comment.text}
+              author={comment.author}          
+            /> */}
+              {/* <Clock /> */}
+              {/* <Timer /> */}
+              {/* <ScrollingList 
+                userID='RLI831'
+                message={message}
+              />
+              <Pomodoro /> */}
+              {/* <Refs1 label="Change" action={() => alert("Hello")} />
+              <Refs2 label="Change: createRef" action={() => alert("Hello: createRef")} />
+              <Refs3 label="Change: useRef" action={() => alert("Hello: useRef")} /> */}
 
-            {/* <Speedometer /> */}
-          </div>
+              {/* <Speedometer /> */}
+            </div>
           </div>
         );
       }

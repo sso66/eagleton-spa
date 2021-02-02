@@ -5,7 +5,7 @@ import './Division.sass';
 console.log('Mounting DefinitionList.jsx... <DefinitionList />');
 
 const Division = () => (
-    <div>
+    <div className='division-wrapper'>
         <div id="feature">
             <h3>Serving Sushi</h3>
             <p>
