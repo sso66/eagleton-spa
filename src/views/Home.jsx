@@ -1,23 +1,15 @@
-// File: HomeView.jsx
+// File: Home.jsx
 // Date: 7/22/2020
 // Note: React ES6 Component API
 import React from 'react'
-import './HomeView.sass';
+import './theme.sass'
 
-import { 
-  Navbar, 
-  DashboardView, 
-} from '../Dashboard';
-
-import { 
-  UINavbarView,
-  UIMainScreen, 
-} from '../../components/Site';
+import MainView from './MainView';
 
 import {
   // DefinitionList,
   // Division
-} from '../../components/Shapes'
+} from '../components/Shapes'
 
 // import UINavbarViewController from '../../components/Site/UINavbarViewController';
 // import { Speedometer } from '../components/SVGR'
@@ -27,19 +19,19 @@ import {
 // import { ScrollingList } from '../components/Lists';
 // import {  ClassNameButton } from '../../components/Buttons'
 
-import { 
+// import { 
   // FormLayout, 
   // ListLayout, 
   // PageFormLayout, 
   // PageListLayout, 
   // TableLayout,
   // GridLayout,
-} from '../../components/Layouts';
+// } from '../components/Layouts';
 
-import {
+// import {
   // ComplexTable,
   // SimpleTable,
-} from '../../components/Tables';
+// } from '../components/Tables';
 
 // import { ChangeButton } from '../components/Buttons';
 // import { Clock, Timer, Pomodoro } from '../components/Clocks';
@@ -63,13 +55,12 @@ import {
 // import FilterableProductTable from './Dashboard/FilterableProductTable';
 // import { LoginForm, LoginFormOnSubmit } from '../components/Loggings';
 
-import { 
+// import { 
   // SubmitForm, 
   // Reservations, 
   // Reservation,
   // HTML5Form 
-}
-from '../../components/Forms';
+// } from '../components/Forms';
 
 // import { 
 //   Flexbox,
@@ -86,15 +77,15 @@ from '../../components/Forms';
 import { 
   // DataLocations, 
   // Datasource 
-} from '../../components/PromiseApi';
+} from '../components/PromiseApi';
 
-// ___ DashboardView resources ___
 const styles = {
+  background: 'black',
+  border: '1px solid white ',
+  padding: 20,
   fontFamily: 'sans-serif',
   textAlign: 'center',
 }
-
-const pages = ['Home', 'About', 'Products', 'FAQ', 'Contact'];
 
 // const message = 
 //   `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -115,8 +106,8 @@ const pages = ['Home', 'About', 'Products', 'FAQ', 'Contact'];
 //   },
 // };
 
-class HomeView extends React.Component {
-    render() {
+function Home() {
+    
       // const PRODUCTS = [
       //   {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
       //   {category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball'},    
@@ -128,22 +119,17 @@ class HomeView extends React.Component {
       
       return (
         <div className='homeview'>
-          <h1>h1 - HomeView</h1>
-          <h2>h2 - From React.jsx and React.sass Prototypes for Separation of Concerns</h2>
+          <h1>Home</h1>
 
           <div style={styles}>
-            <Navbar pages={pages} />
-            <DashboardView pages={pages} />
+            <MainView />
           </div>
 
           {/* <ClassNameButton label='Banner' />
           <ClassNameButton label='Banner' />
           <ClassNameButton label='Banner' /> */}
 
-          <UINavbarView />
-          <UIMainScreen />
           <div className='homeview'>
-            <h3>h3 - To Shared Understanding of UI/UX Architecture &amp; React UI <code>Entry Points</code> Redux API for Production Flow</h3>
             <hr />
             {/* <DataLocations /> */}
             {/* <Datasource /> */}
@@ -227,8 +213,7 @@ class HomeView extends React.Component {
           </div>
         );
       }
-  }
 
-  export default HomeView;
+export default Home;
 
   // eof

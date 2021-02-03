@@ -1,12 +1,11 @@
 // File: Player
 // Date: 7/10/2020
 // Note: Use cases for react-router-dom service package
-
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import PlayerAPI from '../../data/players';
-import './Roster.sass';
+import PlayerAPI from '../data/players';
+import './theme.sass';
 
 // The Player looks up the player using the number parsed from
 // the URL's pathname. If no player is found with the given

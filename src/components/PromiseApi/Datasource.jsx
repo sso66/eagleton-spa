@@ -4,7 +4,7 @@
 
 import React from 'react'
 // import data from  '../../data/books.json'
-import data from '../../api/books.json'
+import data from '../../data/books.json'
 
 import './Datasource.sass'
 

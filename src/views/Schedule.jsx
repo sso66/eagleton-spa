@@ -3,7 +3,7 @@
 // Note: Use-cases for react-router-dom service package
 
 import React from 'react'
-import './Roster.sass';
+import './theme.sass';
 
 const Schedule = () => (
   <div className='schedule'>

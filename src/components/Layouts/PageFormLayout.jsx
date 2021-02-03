@@ -3,7 +3,6 @@
 // Note: Applied CSS Flexbox Module
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import './PageFormLayout.sass';
 
 class PageFormLayout extends React.Component {

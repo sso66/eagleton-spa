@@ -3,16 +3,12 @@
 // Note: React Module
 
 import Header from './Header';
-import NavBar from './NavBar';
 import Main from './Main';
-import UIMainScreen from './UIMainScreen';
-import UINavbarView from './UINavbarView';
+// import MainView from './MainView';
+// import NavView from './NavView';
 
 export { 
-    UIMainScreen,
-    UINavbarView,
     Header, 
-    NavBar, 
     Main,
 }
 
